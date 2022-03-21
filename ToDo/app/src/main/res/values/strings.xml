@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">RecycleView</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="floatingActionButton">Adicionar Nova Tarefa</string>
+    <string name="data">Data</string>
+    <string name="textview">TextView</string>
+    <string name="deletar">Deletar</string>
+</resources>
