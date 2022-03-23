@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Jetpacks_ViewModels</string>
+    <string name="clique">Clique</string>
+    <string name="apenas_clique">Apenas Clique</string>
+</resources>
