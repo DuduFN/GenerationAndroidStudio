@@ -28,14 +28,14 @@ class TarefaAdapter : RecyclerView.Adapter<TarefaAdapter.TarefaViewHolder>() {
             .inflate(R.layout.card_layout, parent, false)
         return TarefaViewHolder(layout)
     }
-    override fun onBindViewHolder(holder:TarefaViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: TarefaViewHolder, position: Int) {
         val tarefa = listaTarefas[position]
         holder.textNome.text = tarefa.nome
         holder.textDescricao.text = tarefa.descricao
         holder.textResponsavel.text = tarefa.responsavel
         holder.textData.text = tarefa.data
-        holder.switchCard.isChecked = tarefa.andamento
-        holder.textCategoria.text = tarefa.categoria
+        holder.switchCard.isChecked = tarefa.status
+        holder.textCategoria.text = tarefa.categoria.descricao
     }
     override fun getItemCount(): Int {
         return listaTarefas.size

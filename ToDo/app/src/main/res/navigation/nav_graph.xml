@@ -6,8 +6,25 @@
     app:startDestination="@id/fragmentList">
 
     <fragment
+        android:id="@+id/seila"
+        android:label="por"
+        tools:layout="@layout/fragment_form" />
+    <fragment
         android:id="@+id/fragmentList"
-        android:name="com.example.recycleview.FragmentList"
+        android:name="com.example.recycleview.ListFragment"
         android:label="fragment_list"
-        tools:layout="@layout/fragment_list" />
+        tools:layout="@layout/fragment_list" >
+        <action
+            android:id="@+id/action_fragmentList_to_formFragment01"
+            app:destination="@id/formFragment01" />
+    </fragment>
+    <fragment
+        android:id="@+id/formFragment01"
+        android:name="com.example.recycleview.FormFragment01"
+        android:label="fragment_form01"
+        tools:layout="@layout/fragment_form01" >
+        <action
+            android:id="@+id/action_formFragment01_to_fragmentList"
+            app:destination="@id/fragmentList" />
+    </fragment>
 </navigation>
