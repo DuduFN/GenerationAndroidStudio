@@ -10,6 +10,7 @@ import com.example.recycleview.repository.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import retrofit2.Response
+import java.time.LocalDate
 import javax.inject.Inject
 
 @HiltViewModel
@@ -20,7 +21,11 @@ class MainViewModel @Inject constructor(
         MutableLiveData<Response<List<Categoria>>>()
     val myCategoriaResponse: LiveData<Response<List<Categoria>>> =
         _myCategoriaResponse
+
+    val dataSelecionada = MutableLiveData<LocalDate>()
+
     init{
+        dataSelecionada.value = LocalDate.now()
         listCategoria()
     }
 

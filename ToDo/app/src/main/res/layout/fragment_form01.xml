@@ -19,7 +19,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="Nome" />
+        tools:text="Nome"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editDescicao"
@@ -35,7 +36,8 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editName"
-        tools:text="Descrição" />
+        tools:text="Descrição"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editResponsavel"
@@ -51,7 +53,8 @@
         app:layout_constraintHorizontal_bias="0.502"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editDescicao"
-        tools:text="Responsavel" />
+        tools:text="Responsavel"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/editData"
@@ -66,7 +69,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editResponsavel"
-        tools:text="Data" />
+        tools:text="Data"
+        android:autofillHints="" />
 
     <Switch
         android:id="@+id/switchStatus"
@@ -82,12 +86,13 @@
         app:layout_constraintTop_toBottomOf="@+id/editData" />
 
     <Spinner
-        android:id="@+id/spinner"
+        android:id="@+id/spinnerCategoria"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
+        android:contentDescription="@string/Spinner"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -100,8 +105,8 @@
         android:layout_marginStart="60dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="60dp"
-        android:text="Salvar"
+        android:text="@string/salvar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+        app:layout_constraintTop_toBottomOf="@+id/spinnerCategoria" />
 </androidx.constraintlayout.widget.ConstraintLayout>
