@@ -37,9 +37,11 @@ class TarefaAdapter : RecyclerView.Adapter<TarefaAdapter.TarefaViewHolder>() {
         holder.switchCard.isChecked = tarefa.status
         holder.textCategoria.text = tarefa.categoria.descricao
     }
+
     override fun getItemCount(): Int {
         return listaTarefas.size
     }
+
     fun setLista(lista:List<Tarefa>){
         listaTarefas = lista
         notifyDataSetChanged()
